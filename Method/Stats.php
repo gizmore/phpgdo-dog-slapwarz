@@ -22,7 +22,7 @@ final class Stats extends DOG_Command
     public function gdoParameters(): array
     {
         return [
-            GDT_DogUser::make('user')->notNull()->thyself(),
+            GDT_DogUser::make('user')->notNull()->defaultCurrent(),
         ];
     }
 
